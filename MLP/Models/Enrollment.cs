@@ -10,7 +10,6 @@ namespace MLP.Models
     public class Enrollment
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int EnrollmentId { get; set; }
 
         public int CourseId { get; set; }

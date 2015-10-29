@@ -23,8 +23,8 @@ namespace MLP.Controllers
         // GET: /Course/
         public ActionResult Index()
         {
-            List<Course> model = (List<Course>)courseRepository.SelectAll();
-            return View();
+            List<Course> courseList = (List<Course>)courseRepository.SelectAll();
+            return View(courseList);
         }
 	}
 }
