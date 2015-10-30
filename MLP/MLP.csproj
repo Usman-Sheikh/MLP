@@ -160,11 +160,11 @@
     <Content Include="Scripts\app\jquery-1.10.2.js" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Course\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Course\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Course\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Course\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Course\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCourse\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCourse\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCourse\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCourse\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCourse\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Details.cshtml" />
@@ -195,7 +195,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
-    <Compile Include="Areas\Admin\Controllers\CourseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\CourseRepository.cs" />

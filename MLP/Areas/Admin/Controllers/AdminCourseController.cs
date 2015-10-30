@@ -11,7 +11,7 @@ using MLP.Data;
 
 namespace MLP.Areas.Admin.Controllers
 {
-    public class CourseController : Controller
+    public class AdminCourseController : Controller
     {
         private MLPContext db = new MLPContext();
 

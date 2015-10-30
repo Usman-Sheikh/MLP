@@ -1,0 +1,90 @@
+﻿@model IEnumerable<MLP.Models.Course>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="page-section">
+    <div class="row">
+        <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+            <h4 class="page-section-heading">Courses</h4>
+            <div class="panel panel-default">
+                <!-- Progress table -->
+                <div class="table-responsive">
+                    <table class="table v-middle">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Title)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Description)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Duration)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.OutComes)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CreditHours)
+                                </th>
+                                <th class="text-right">Action</th>
+                            </tr>
+                        </thead>
+                   
+                        <tbody id="responsive-table-body">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Title)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Description)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Duration)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.OutComes)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CreditHours)
+                                    </td>
+                                    <td class ="text-right">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.CourseId , @class="fa fa-pencil" }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.CourseId }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
+                                    </td >
+                                </tr>
+                            }
+                        </tbody>
+</table>
+                </div>
+                <!-- // Progress table -->
+                <div class="panel-footer padding-none text-center">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
