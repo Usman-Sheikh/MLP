@@ -198,8 +198,11 @@
     <Compile Include="Areas\Admin\Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\GenericRepository.cs" />
     <Compile Include="Data\CourseRepository.cs" />
     <Compile Include="Data\ICourseRepository.cs" />
+    <Compile Include="Data\IEntity.cs" />
+    <Compile Include="Data\IRepository.cs" />
     <Compile Include="Data\MLPContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

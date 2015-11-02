@@ -14,21 +14,33 @@ namespace MLP.Areas.Admin.Controllers
     public class AdminCourseController : Controller
     {
         private MLPContext db = new MLPContext();
-
+        private IRepository<Course> repository = null;
+        public AdminCourseController()
+        {
+         this.repository = new GenericRepository<Course>();
+        }
+        public AdminCourseController(GenericRepository<Course> repository)
+        {
+                this.repository = repository;
+        }
+       
         // GET: /Admin/Course/
         public ActionResult Index()
         {
-            return View(db.Courses.ToList());
+
+            List<Course> courseList = (List<Course>)repository.SelectAll();
+            return View(courseList);
+        
         }
 
         // GET: /Admin/Course/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            if (id == null)
+            if (id < 0)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Course course = db.Courses.Find(id);
+            Course course = repository.SelectByID(id);
             if (course == null)
             {
                 return HttpNotFound();
