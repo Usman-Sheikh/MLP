@@ -170,6 +170,11 @@
     <Content Include="Areas\Admin\Views\Content\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminModules\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminModules\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminModules\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminModules\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminModules\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -194,6 +199,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminModulesController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
