@@ -21,10 +21,13 @@ namespace MLP.Models
 
         public int? CreditHours { get; set; }
 
+        public int CategoryCourses_CategoryCourseId { get; set; }
         public virtual ICollection<CourseInstructor> CourseInstructors { get; set; }
 
         public virtual ICollection<Module> Modules { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
+
+        public virtual CategoryCourse CategoryCourses { get; set; }
     }
 }

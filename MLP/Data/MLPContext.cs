@@ -21,6 +21,7 @@ namespace MLP.Data
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<TeacherAssistant> TeacherAssistants { get; set; }
+        public DbSet<CategoryCourse> CategoryCourses { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

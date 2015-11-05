@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 
 namespace MLP.Data
@@ -28,6 +29,11 @@ namespace MLP.Data
         public Course SelectByID(int id)
         {
             return db.Courses.Find(id);
+        }
+
+        public IEnumerable<Course> FilterByParam(System.Linq.Expressions.Expression<Func<Course, bool>> predicate)
+        {
+            return db.Courses.Where(predicate).ToList();
         }
 
         public void Add(Course course)

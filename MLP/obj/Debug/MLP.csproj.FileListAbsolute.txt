@@ -142,3 +142,5 @@ C:\Users\bilal\Documents\GitHub\MLP\MLP\bin\System.Web.Mvc.xml
 C:\Users\bilal\Documents\GitHub\MLP\MLP\obj\Debug\MLP.csprojResolveAssemblyReference.cache
 C:\Users\bilal\Documents\GitHub\MLP\MLP\obj\Debug\MLP.dll
 C:\Users\bilal\Documents\GitHub\MLP\MLP\obj\Debug\MLP.pdb
+C:\Users\bilal\Documents\GitHub\MLP\MLP\obj\Debug\MLP.Migrations.InitialCreate.resources
+C:\Users\bilal\Documents\GitHub\MLP\MLP\obj\Debug\MLP.csproj.GenerateResource.Cache
